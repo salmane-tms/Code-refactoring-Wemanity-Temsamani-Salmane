@@ -11,11 +11,11 @@ class GildedRose {
     function update_quality() {
         foreach ($this->items as $item) {
 			if ($item->quality ==50 && ($item->name == "Aged Brie" || $items->name== "Backstage passes") ) {
-				print("Item cannot have quality value more than 50 !");
-			}elseif ($item->quality==0 && ($item->name != "Aged Brie" && $items->name!= "Backstage passes") ){
-				print("Item cannot have quality value less than 0 !");
+				print(" </br> Item cannot have quality value more than 50 ! </br>");
+			}elseif ($item->quality==0 && ($item->name != "Aged Brie" && $item->name!= "Backstage passes") ){
+				print("</br> Item cannot have quality value less than 0 ! </br>");
 			}elseif($item->name == "Sulfuras"){
-				print("Impossible to alter Sulfuras item");
+				print(" </br> Impossible to alter Sulfuras item  </br>");
 			}else{
 				switch($item->name){
 					case "Aged Brie":
