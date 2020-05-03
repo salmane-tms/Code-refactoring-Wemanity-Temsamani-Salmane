@@ -16,14 +16,14 @@ class GildedRose {
 				print("</br> Item cannot have quality value less than 0 ! </br>");
 			}elseif($item->name == "Sulfuras"){
 				print(" </br> Impossible to alter Sulfuras item  </br>");
-			}elseif($item->quality==0 && $item->sell_in==0){
+			}elseif($item->quality==0 || $item->sell_in==0){
 				print("</br> Impossible to alter this item </br>");
 			}else{
 				switch($item->name){
 					case "Aged Brie":
-						$item->quality= $item->quality+1;
-						$item->sell_in= $item->sell_in-1;
-						break;
+							$item->quality= $item->quality+1;
+							$item->sell_in= $item->sell_in-1;
+							break;
 					case "Backstage passes":
 						if ($item->sell_in <=10 && $item->sell_in> 5 ) {
 							$item->sell_in= $item->sell_in-1;
