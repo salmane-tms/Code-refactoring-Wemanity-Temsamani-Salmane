@@ -33,25 +33,16 @@ for ($i = 0; $i < $days; $i++) {
     $app->update_quality();
 }
 
-print (" </br> END test 1 </br>");
+print ("END test 1 </br>");
 // end test 1 ------------------------------------------
 
 
 // test 2 -------------------------------------------
 $items2 = array(
-    new Item('+5 Dexterity Vest', 10, 20),
-    new Item('Aged Brie', 2, 0),
-    new Item('Elixir of the Mongoose', 5, 7),
-    new Item('Sulfuras', 0, 80),
-    new Item('Sulfuras', -1, 80),
-    new Item('Backstage passes', 15, 20),
-    new Item('Backstage passes', 10, 49),
-    new Item('Backstage passes', 5, 49),
-    // this conjured item does not work properly yet
-    new Item('Conjured Mana Cake', 3, 6)
+    new Item('Backstage passes', 5, 49)
 );
 
-$app2 = new GildedRose($items);
+$app2 = new GildedRose($items2);
 $days2 = 10;
 
 for ($i = 0; $i < $days2; $i++) {
@@ -59,8 +50,10 @@ for ($i = 0; $i < $days2; $i++) {
 	print("</br>");
     echo("name, sellIn, quality ");
 	echo ("</br>");
-    foreach ($items2 as $item) {
-        echo $item . PHP_EOL;
+    foreach ($items2 as $item2) {
+		echo "</br>";
+        echo $item2 . PHP_EOL;
+		echo "</br>";
     }
     echo PHP_EOL;
     $app2->update_quality();
