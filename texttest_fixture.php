@@ -1,7 +1,10 @@
 <?php
 
 require_once 'gilded_rose2.php';
-
+$days = 2;
+if (count($argv) > 1) {
+    $days = (int) $argv[1];
+}
 echo "OMGHAI!\n";
 
 // test 1 ---------------------------------------
