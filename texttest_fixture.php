@@ -23,9 +23,9 @@ $days = 2;
 
 for ($i = 0; $i < $days; $i++) {
     echo("-------- day $i -------- ");
-	print("</br>");
+	print("\n");
     echo("name, sellIn, quality ");
-	echo ("</br>");
+	echo ("\n");
     foreach ($items as $item) {
         echo $item . PHP_EOL;
     }
@@ -33,7 +33,7 @@ for ($i = 0; $i < $days; $i++) {
     $app->update_quality();
 }
 
-print ("END test 1 </br>");
+print ("END test 1 \n");
 // end test 1 ------------------------------------------
 
 
@@ -47,17 +47,17 @@ $days2 = 10;
 
 for ($i = 0; $i < $days2; $i++) {
     echo("-------- day $i -------- ");
-	print("</br>");
+	print("\n");
     echo("name, sellIn, quality ");
-	echo ("</br>");
+	echo ("\n");
     foreach ($items2 as $item2) {
-		echo "</br>";
+		echo "\n";
         echo $item2 . PHP_EOL;
-		echo "</br>";
+		echo "\n";
     }
     echo PHP_EOL;
     $app2->update_quality();
 }
 
 // end test 2 ----------------------------------------
-print ("</br> END test 2 </br>");
+print ("\n END test 2 \n");
